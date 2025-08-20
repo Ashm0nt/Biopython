@@ -30,8 +30,9 @@ class tRNA(Gen):
         return True
     
     def participar_traduccion(self, mRNA):
-        if self.emparejar_codon(mRNA[:3]) and self.carga:
-            return self.aminoacido
+        for i in range(0, len(mRNA)-2, 3):
+            if self.emparejar_codon(mRNA[i:i+3]) and self.carga:
+                return self.aminoacido
         return None
 
 
