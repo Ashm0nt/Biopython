@@ -28,6 +28,11 @@ class tRNA(Gen):
             if pares.get(base_codon) != base_anticodon:
                 return False
         return True
+    
+    def participar_traduccion(self, mRNA):
+        if self.emparejar_codon(mRNA[:3]) and self.carga:
+            return self.aminoacido
+        return None
 
 
 

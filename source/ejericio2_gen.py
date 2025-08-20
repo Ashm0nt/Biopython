@@ -1,6 +1,6 @@
 class Gen:
 
-    def __init__(self, nombre, secuencia, organismo="desconocido"):
+    def __init__(self, nombre, secuencia, organismo):
         self.nombre = nombre
         self.secuencia = secuencia.upper()
         self.organismo = organismo
