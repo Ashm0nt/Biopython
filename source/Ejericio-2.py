@@ -1,24 +1,21 @@
 class Gen:
     
-    def __init__(self, nombre, secuencia, organismo):
-        """Generador y atributos"""
+    def __init__(self, nombre, secuencia, organismo="desconocido"):
         self.nombre = nombre
+        self.secuencia = secuencia.upper()
         self.organismo = organismo
-        self.secuencia = secuencia
-
-    def kilobases(self):
-        """Regresa las kilobases del gen"""
-        longitud = len(self.secuencia)
-        kilobases = longitud / 1000
-        return kilobases
-
-    def contenido_gc(self):
-        """Calcula el contenido GC de la secuencia"""
-        if len(self.secuencia) == 0:
-            return 0
+    
+    def longitud(self):
+        return len(self.secuencia)
+    
+    def porcentaje_gc(self):
         g = self.secuencia.count("G")
         c = self.secuencia.count("C")
         return (g + c) / len(self.secuencia) * 100
+    
+    def mostrar_info(self):
+        return f"Gen: {self.nombre}, Organismo: {self.organismo}, Longitud: {self.longitud()} pb"
+
 
 
 
