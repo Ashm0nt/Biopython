@@ -8,6 +8,9 @@ class Gen:
     def longitud(self):
         return len(self.secuencia)
     
+    def kilobases(self):
+        return self.longitud() / 1000
+    
     def porcentaje_gc(self):
         g = self.secuencia.count("G")
         c = self.secuencia.count("C")
