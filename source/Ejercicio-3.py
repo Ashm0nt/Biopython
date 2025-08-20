@@ -1,5 +1,5 @@
 
-from Ejercicio-2 import Gen
+from ejericio2_gen import Gen
 
 
 class tRNA(Gen):
