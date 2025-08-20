@@ -1,20 +1,5 @@
 
-class Gen:
-    
-    def __init__(self, nombre, secuencia, organismo):
-        self.nombre = nombre
-        self.secuencia = secuencia.upper()
-        self.organismo = organismo
-
-    def calcular_longitud(self):
-        return len(self.secuencia)
-
-    def contenido_gc(self):
-        if len(self.secuencia) == 0:
-            return 0
-        g = self.secuencia.count("G")
-        c = self.secuencia.count("C")
-        return (g + c) / len(self.secuencia) * 100
+from Ejercicio-2 import Gen
 
 
 class tRNA(Gen):
