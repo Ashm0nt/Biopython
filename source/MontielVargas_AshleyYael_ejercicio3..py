@@ -1,5 +1,5 @@
 
-from ejericio2_gen import Gen
+from source.MontielVargas_AshleyYael_ejercicio2 import Gen
 
 
 class tRNA(Gen):

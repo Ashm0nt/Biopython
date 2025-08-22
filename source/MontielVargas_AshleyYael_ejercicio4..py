@@ -1,4 +1,4 @@
-from ejercicio3_herencia import tRNA
+from source.MontielVargas_AshleyYael_ejercicio3 import tRNA
 
 """La clase tRNA ya tiene el metodo de longitud heredado de Gen"""
 
